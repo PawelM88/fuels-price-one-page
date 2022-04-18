@@ -1,0 +1,145 @@
+#footer {
+    margin: auto;
+    box-sizing: content-box;
+    width: 100%;
+    height: auto;
+    background-color: rgb(126, 120, 120);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#email {
+    float: left;
+    margin-left: 10px;
+}
+
+#rights {
+    float: right;
+    margin-right: 10px;
+}
+
+body {
+    background-image: url("/images/refinery.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.description {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#factors-left {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+#factors-right {
+    list-style: none;
+    float: right;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2%;
+    margin-right: 35%;
+    margin-bottom: 35px;
+}
+
+#fuel-type {
+    padding-top: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 50px;
+}
+
+select:not(:checked) {
+    border: 2px solid blue;
+    border-radius: 4px;
+    background-color: #3CBC8D;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+form {
+    padding-top: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 50px;
+}
+
+input[type=number] {
+    border: 2px solid blue;
+    border-radius: 4px;
+    background-color: #3CBC8D;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.valid-error-list {
+    text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    list-style: none;
+}
+
+#question {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-left: 39%;
+    margin-right: 6%;
+    color: #0c0d0d;
+}
+
+#links-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.links-li {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-decoration: none;
+    background-color: #3CBC8D;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
