@@ -24,9 +24,9 @@ class FuelsController extends Controller
 
         if ($fuelType === 'petrol') {
             $petrolPrice = ((($oil / 159 + 0.26) * $pln) + 1.369 + 0.15261 + 0.08 + 0.37 + 0.1) * ($vat / 100 + 1);
+            return number_format($petrolPrice, 2, ',', ' ');
         }
-
-        return number_format($petrolPrice, 2, ',', ' ');
+        
 
         return redirect('/');
     }
