@@ -11308,8 +11308,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background-image: url("/images/refinery.jpg");
-  background-size: cover;
+  background-color: rgb(237, 246, 253);
 }
 
 h1, .h1 {
@@ -11362,7 +11361,7 @@ select:not(:checked) {
   border-radius: 4px;
   background-color: #3CBC8D;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -11370,7 +11369,7 @@ form {
   padding-top: 30px;
   padding-left: 25%;
   padding-right: 25%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 input[type=number] {
@@ -11378,7 +11377,7 @@ input[type=number] {
   border-radius: 4px;
   background-color: #3CBC8D;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -11392,14 +11391,12 @@ input[type=number] {
 }
 
 #question {
-  padding-left: 10%;
-  padding-right: 10%;
+  text-align: center;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-bottom: 3%;
-  margin-left: 39%;
-  margin-right: 6%;
+  margin-left: 25%;
+  margin-right: 25%;
   color: #0c0d0d;
 }
 
@@ -11430,4 +11427,52 @@ a:visited {
 
 a:hover {
   color: red;
+}
+
+.price-place {
+  padding-left: 50%;
+  padding-right: 25%;
+  margin-bottom: 30px;
+}
+
+.price {
+  border: 2px solid blue;
+  border-radius: 4px;
+  background-color: #3CBC8D;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 5px;
+}
+
+table,
+th,
+td {
+  border: 2px solid;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5%;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.result-description {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#formula-developer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }

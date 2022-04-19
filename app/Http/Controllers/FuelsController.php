@@ -23,11 +23,15 @@ class FuelsController extends Controller
         $vat = $request->input('vat');
 
         if ($fuelType === 'petrol') {
-            $petrolPrice = ((($oil / 159 + 0.26) * $pln) + 1.369 + 0.15261 + 0.08 + 0.37 + 0.1) * ($vat / 100 + 1);
-            return number_format($petrolPrice, 2, ',', ' ');
+            $rawPetrolPrice = ((($oil / 159 + 0.26) * $pln) + 1.369 + 0.15261 + 0.08 + 0.37 + 0.1) * ($vat / 100 + 1);
+            $petrolPrice = number_format($rawPetrolPrice, 2, ',', ' ');
+            return view('fuels.index')->with('petrolPrice', $petrolPrice);
         }
-        
 
-        return redirect('/');
+        if ($fuelType === 'diesel') {
+            $rawDieselPrice = ((($oil / 159 + 0.47) * $pln) + 1.065 + 0.32912 + 0.08 + 0.37 + 0.1) * ($vat / 100 + 1);
+            $dieselPrice = number_format($rawDieselPrice, 2, ',', ' ');
+            return view('fuels.index')->with('dieselPrice', $dieselPrice);
+        }
     }
 }

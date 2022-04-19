@@ -15,4 +15,4 @@ use App\Http\Controllers\FuelsController;
 */
 
 Route::get('/', [FuelsController::class, 'index']);
-Route::post('/calculate', [FuelsController::class, 'calculate']);
+Route::post('/', [FuelsController::class, 'calculate']);
